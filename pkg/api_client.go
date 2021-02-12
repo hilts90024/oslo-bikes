@@ -13,12 +13,12 @@ type APIClient struct {
 	client           *http.Client
 }
 
-func NewAPIClient(ctx context.Context, baseURL string, clientIdentifier string) *APIClient {
+func NewAPIClient(ctx context.Context, http *http.Client, baseURL string, clientIdentifier string) *APIClient {
 	return &APIClient{
 		ctx:              ctx,
 		BaseURL:          baseURL,
 		ClientIdentifier: clientIdentifier,
-		client:           &http.Client{Transport: nil},
+		client:           http,
 	}
 }
 

@@ -11,3 +11,13 @@ Required environment variables
 ```sh
 BASE_URL=https://gbfs.urbansharing.com/oslobysykkel.no/ CLIENT_IDENTIFIER=mittfirma-reiseplanlegger go run cmd/main.go
 ```
+
+
+## GET
+Visit http://localhost:8080 to see result in `json`.
+
+
+## Run tests
+```sh
+go test -race -v ./...
+```

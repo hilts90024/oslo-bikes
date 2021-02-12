@@ -1,18 +1,5 @@
-package pkg
+package models
 
-// {
-// 	"last_updated": 1553592653,
-// 	"ttl": 10,
-// 	"data": {
-// 		"system_id": "oslobysykkel",
-// 		"language": "nb",
-// 		"name": "Oslo Bysykkel",
-// 		"operator": "UIP Oslo Bysykkel AS",
-// 		"timezone": "Europe/Oslo",
-// 		"phone_number": "+4791589700",
-// 		"email": "post@oslobysykkel.no"
-// 	}
-// }
 type SystemInformationResponse struct {
 	LastUpdated uint32
 	TTL         uint
